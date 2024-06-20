@@ -103,8 +103,9 @@ type FileSystemConfig struct {
 }
 
 type FileCacheConfig struct {
-	MaxSizeMB             int64 `yaml:"max-size-mb"`
-	CacheFileForRangeRead bool  `yaml:"cache-file-for-range-read"`
+	MaxSizeMB             int64  `yaml:"max-size-mb"`
+	CacheFileForRangeRead bool   `yaml:"cache-file-for-range-read"`
+	CacheExcludeRegex     string `yaml:"cache-file-exclude-regex"`
 }
 
 type MetadataCacheConfig struct {
